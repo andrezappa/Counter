@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <meta
+      http-equiv="X-UA-Compatible"
+      content="IE=edge"
+    />
+    <meta
+      property="og:title"
+      content="Andrea Zappa JS Counter"
+    />
+    <meta
+      property="og:description"
+      content="First Start2Impact Project: JS Counter"
+    />
+    <title>Counter</title>
+    <link
+      rel="stylesheet"
+      href="./assets/style/style.css"
+    />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="./assets/img/favicon-16x16.png"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- HEADER SECTION -->
+    <header>
+      <h1 class="title">JS Counter</h1>
+      <div class="socialIcon">
+        <a
+          href="https://github.com/andrezappa"
+          target="_blank"
+          rel="noopener"
+          ><i class="fab fa-github fa-lg"></i
+        ></a>
+        <a
+          href="https://www.linkedin.com/in/andrea-zappa-b823751b2/"
+          target="_blank"
+          rel="noopener"
+          ><i class="fab fa-linkedin fa-lg"></i
+        ></a>
+        <a
+          href="https://www.instagram.com/andre_zappa/"
+          target="_blank"
+          rel="noopener"
+          ><i class="fab fa-instagram fa-lg"></i
+        ></a>
+      </div>
+    </header>
+
+    <!-- COUNTER SECTION -->
+    <div class="container">
+      <!-- Set Value Section -->
+      <div class="start">
+        <label for="startInput">Start From:</label>
+        <input
+          type="text"
+          id="startInput"
+          placeholder="Insert a start value"
+        />
+        <button id="setCounter">
+          Set Counter
+          <p>Enter</p>
+        </button>
+      </div>
+      <!-- Counter Basic Function -->
+      <div class="counterContainer">
+        <div
+          class="counter"
+          id="counter"
+        >
+          0
+        </div>
+        <div class="containerButtonCounter">
+          <button
+            class="minusButton buttonCounter"
+            id="minusButton"
+            onclick="minus()"
+          >
+            -
+          </button>
+          <button
+            class="plusButton buttonCounter"
+            id="plusButton"
+            onclick="plus()"
+          >
+            +
+          </button>
+        </div>
+      </div>
+      <!-- Other Function -->
+      <div class="otherButtons">
+        <button
+          id="autoButton"
+          class="autoButton"
+        >
+          Auto
+          <p id="shortAutoButton">A</p>
+        </button>
+        <button
+          class="resetButton"
+          onclick="reset()"
+        >
+          Reset
+          <p>Canc</p>
+        </button>
+      </div>
+    </div>
+
+    <!-- FOOTER SECTION -->
+    <footer>
+      <div class="socialIcon">
+        <a
+          href="https://github.com/andrezappa"
+          target="_blank"
+          rel="noopener"
+          ><i class="fab fa-github fa-lg"></i
+        ></a>
+        <a
+          href="https://www.linkedin.com/in/andrea-zappa-b823751b2/"
+          target="_blank"
+          rel="noopener"
+          ><i class="fab fa-linkedin fa-lg"></i
+        ></a>
+        <a
+          href="https://www.instagram.com/andre_zappa/"
+          target="_blank"
+          rel="noopener"
+          ><i class="fab fa-instagram fa-lg"></i
+        ></a>
+      </div>
+      <div class="copyright">Copyright © 2023 Andrea Zappa</div>
+    </footer>
+
+    <!-- SCRIPT -->
+    <script src="./assets/script/functions.js"></script>
+    <script src="./assets/script/main.js"></script>
+  </body>
+</html>

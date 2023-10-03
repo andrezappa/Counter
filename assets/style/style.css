@@ -1,0 +1,276 @@
+/*GENERAL SETTINGS*/
+:root {
+  --bgbody: hsl(0, 0%, 14%);
+  --bgbody2: hsl(0, 0%, 8%);
+  --text1: hsl(0, 0%, 100%);
+  --text2: hsl(0, 0%, 8%);
+  --accent: hsl(153, 71%, 59%);
+  --transition: 200ms ease-in-out;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--bgbody);
+  font-family: "Space Grotesk", sans-serif;
+}
+
+h1 {
+  font-size: 1.25em;
+}
+
+a {
+  margin-inline: 5px;
+  font-size: 0.8em;
+  color: var(--text1);
+}
+
+h1:hover,
+a:hover {
+  color: var(--accent);
+  transition: var(--transition);
+}
+
+button > p {
+  font-size: 0.8em;
+  font-style: italic;
+  margin-top: 5px;
+}
+
+/*HEADER*/
+header {
+  height: 10vh;
+  background-color: var(--bgbody2);
+  color: var(--text1);
+  font-size: 1.25em;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+/*MAIN CONTENT*/
+.container {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 70vh;
+}
+
+/* Counter */
+.start {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  font-size: 1.2em;
+}
+
+label {
+  margin-bottom: 10px;
+  color: var(--text1);
+}
+
+input {
+  margin-bottom: 10px;
+  border: none;
+  border-bottom: 1px solid var(--text1);
+  height: 100%;
+  background-color: transparent;
+  color: var(--accent);
+  font-size: 1em;
+}
+
+input:focus {
+  outline: 1px solid var(--accent);
+  border-bottom: 1px solid var(--text1);
+  background-color: var(--bgbody2);
+}
+
+#setCounter {
+  margin-left: 10px;
+  font-size: 1em;
+  border: none;
+  padding: 10px;
+  background-color: var(--accent);
+  color: var(--text2);
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.counterContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.counterContainer {
+  height: 50%;
+  width: 80%;
+}
+
+.counter {
+  height: 40%;
+  width: 100%;
+  background-color: var(--bgbody2);
+  color: var(--text1);
+  border-radius: 10px;
+  box-shadow: 0 0 30px;
+  margin: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 52px;
+  font-weight: bold;
+}
+
+.containerButtonCounter {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.buttonCounter,
+.autoButton,
+.resetButton {
+  text-align: center;
+  background-color: var(--accent);
+  color: var(--text2);
+  border: none;
+  border-radius: 10px;
+  box-shadow: 5px 5px 30px;
+  cursor: pointer;
+}
+
+.buttonCounter {
+  font-size: 2em;
+  font-weight: 700;
+  width: 20%;
+  margin-inline: 10px;
+}
+
+.otherButtons {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: stretch;
+  width: 40%;
+  height: 20%;
+}
+
+.autoButton,
+.resetButton {
+  min-height: 40%;
+  min-width: 40%;
+  font-size: 1em;
+  margin-bottom: 10px;
+}
+
+/*FOOTER*/
+footer {
+  height: 20vh;
+  background-color: var(--bgbody2);
+  color: var(--text1);
+  font-size: 1.5em;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+
+.copyright {
+  font-size: 0.4em;
+  color: var(--text1);
+}
+
+/* Media */
+/*TABLET >= 600px*/
+@media (min-width: 37.5em) {
+  header,
+  footer {
+    font-size: 2em;
+  }
+  .start {
+    flex-direction: row;
+    font-size: 1.25em;
+  }
+  input {
+    margin-inline: 10px;
+    font-size: 1.25em;
+  }
+  label {
+    font-size: 1.25em;
+  }
+  .counter {
+    height: 50%;
+    margin: 30px;
+  }
+  .buttonCounter {
+    width: 15%;
+    font-size: 2.5em;
+    margin-inline: 20px;
+  }
+  .otherButtons {
+    align-items: center;
+    justify-content: space-between;
+    min-height: 30%;
+  }
+  .autoButton,
+  .resetButton {
+    font-size: 1.5em;
+  }
+}
+
+/*DESKTOP >= 1000px*/
+@media (min-width: 62.5em) {
+  .start {
+    font-size: 1.5em;
+  }
+  input {
+    margin-inline: 10px;
+  }
+  .container {
+    padding: 30px;
+  }
+  .counterContainer {
+    margin: 30px;
+  }
+  .counter {
+    width: 80%;
+  }
+  .buttonCounter {
+    width: 10%;
+    min-height: 25%;
+    font-size: 2.75em;
+  }
+  .buttonCounter,
+  .otherButtons {
+    margin-top: 10px;
+  }
+  .autoButton,
+  .resetButton {
+    max-width: 15%;
+    font-size: 2em;
+  }
+  button > p {
+    font-size: 0.5em;
+  }
+}
+
+/* <= 300px */
+@media (max-width: 18.75em) {
+  input {
+    width: 50%;
+  }
+  input::placeholder {
+    color: transparent;
+  }
+}
