@@ -41,9 +41,9 @@ document.querySelector("#setCounter").addEventListener("click", function () {
     counter = startValue;
     document.getElementById("counter").innerHTML = counter;
   } else {
-    alert("Please enter a valid number."); //Alert message in case of invalid input
+    alert("Please enter a valid number."); // Alert message in case of invalid input
   }
-  document.getElementById("startInput").value = ""; //Restore the input
+  document.getElementById("startInput").value = ""; // Reset the input
 });
 
 //Keyboard Input
@@ -53,16 +53,16 @@ document
   .getElementById("startInput")
   .addEventListener("keydown", function (event) {
     if (event.key === "Enter") {
-      event.preventDefault(); // Evita che l'invio del modulo ricarichi la pagina (comportamento predefinito)
+      event.preventDefault(); // Prevents form submission from reloading the page (default behavior)
       const startValue = parseInt(this.value);
 
       if (!isNaN(startValue)) {
         counter = startValue;
         document.getElementById("counter").innerHTML = counter;
       } else {
-        alert("Please enter a valid number."); // Mostra un messaggio se l'input non è un numero valido
+        alert("Please enter a valid number."); // Show a message if the input is not a valid number
       }
-      this.value = ""; // Resetta il valore dell'input dopo l'aggiornamento del contatore
+      this.value = ""; // Resets the input value after the counter is updated
     }
   });
 
