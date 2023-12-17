@@ -1,7 +1,7 @@
 let counter = 0;
 let interval;
 
-//Increment by 10 on long pression only if the counter is a two-digit number
+// Increment by 10 on long pression only if the counter is a two-digit number
 document
   .querySelector(".plusButton")
   .addEventListener("mousedown", function () {
@@ -12,7 +12,7 @@ document
     }
   });
 
-//Decrement of 10 by long pression only if the counter is a two-digit number
+// Decrement of 10 by long pression only if the counter is a two-digit number
 document
   .querySelector(".minusButton")
   .addEventListener("mousedown", function () {
@@ -23,17 +23,17 @@ document
     }
   });
 
-//Stop the counter on mouseup
+// Stop the counter on mouseup
 document.addEventListener("mouseup", function () {
   clearInterval(interval);
 });
 
-//Auto Increment by Auto button
+// Auto Increment by Auto button
 document.querySelector(".autoButton").addEventListener("click", function () {
   startAutoCounter();
 });
 
-//Setting a start value by Set button
+// Setting a start value by Set button
 document.querySelector("#setCounter").addEventListener("click", function () {
   const startValue = parseInt(document.getElementById("startInput").value);
 
@@ -46,9 +46,9 @@ document.querySelector("#setCounter").addEventListener("click", function () {
   document.getElementById("startInput").value = ""; // Reset the input
 });
 
-//Keyboard Input
+// Keyboard Input
 
-//Setting a start value via keyboard
+// Setting a start value via keyboard
 document
   .getElementById("startInput")
   .addEventListener("keydown", function (event) {
@@ -66,7 +66,7 @@ document
     }
   });
 
-//Keyboard Input for counter
+// Keyboard Input for counter
 document.addEventListener("keydown", function (event) {
   switch (event.key) {
     case "+":
