@@ -59,7 +59,7 @@ header {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  height: 70vh;
+  height: 80vh;
 }
 
 /* Counter */
@@ -116,7 +116,7 @@ input:focus {
   width: 80%;
 }
 
-.counter {
+.counterDisplay {
   height: 40%;
   width: 100%;
   background-color: var(--bgbody2);
@@ -131,7 +131,7 @@ input:focus {
   font-weight: bold;
 }
 
-.containerButtonCounter {
+.containerButtonsCounter {
   width: 100%;
   display: flex;
   align-items: center;
@@ -176,10 +176,10 @@ input:focus {
 
 /*FOOTER*/
 footer {
-  height: 20vh;
+  height: 10vh;
   background-color: var(--bgbody2);
   color: var(--text1);
-  font-size: 1.5em;
+  font-size: 1.25em;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -196,7 +196,7 @@ footer {
 @media (min-width: 37.5em) {
   header,
   footer {
-    font-size: 2em;
+    font-size: 1.5em;
   }
   .start {
     flex-direction: row;
@@ -209,7 +209,7 @@ footer {
   label {
     font-size: 1.25em;
   }
-  .counter {
+  .counterDisplay {
     height: 50%;
     margin: 30px;
   }
@@ -232,18 +232,18 @@ footer {
 /*DESKTOP >= 1000px*/
 @media (min-width: 62.5em) {
   .start {
-    font-size: 1.5em;
+    font-size: 1.25em;
   }
   input {
     margin-inline: 10px;
   }
   .container {
-    padding: 30px;
+    padding: 50px;
   }
   .counterContainer {
     margin: 30px;
   }
-  .counter {
+  .counterDisplay {
     width: 80%;
   }
   .buttonCounter {
@@ -257,8 +257,8 @@ footer {
   }
   .autoButton,
   .resetButton {
-    max-width: 15%;
-    font-size: 2em;
+    /* max-width: 15%; */
+    font-size: 1.25em;
   }
   button > p {
     font-size: 0.5em;
