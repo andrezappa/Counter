@@ -1,4 +1,4 @@
-// Create Element
+// Element Creation Function
 function createElement(
   typeElem,
   idElem,

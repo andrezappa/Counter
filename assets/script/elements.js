@@ -1,9 +1,9 @@
+// Container into wich to append the counter elements
 const container = document.querySelector("#container");
-// console.log(container);
 
 // Creation of all the HTML elements
 
-// Cretion of startContainer where the user can set a specific starting value for the counter
+// Cretion startContainer where the user can set a specific starting value for the counter
 const startContainer = createElement(
   "div",
   "startContainer",
@@ -12,7 +12,7 @@ const startContainer = createElement(
   container
 );
 
-//  Label for the start input
+//  Label for the input
 const startInputLabel = createElement(
   "label",
   null,
@@ -22,7 +22,7 @@ const startInputLabel = createElement(
   { for: "startInput" }
 );
 
-//  Iinput Element
+//  Input Element
 const startInput = createElement(
   "input",
   "startInput",
@@ -41,7 +41,7 @@ const setCounterButton = createElement(
   startContainer
 );
 
-// Creation of the counter card
+// Creation of the counter
 
 // Counter Container
 const counterContainer = createElement(
@@ -187,7 +187,7 @@ document
         counter = startValue;
         document.getElementById("counterDisplay").innerHTML = counter;
       } else {
-        alert("Please enter a valid number."); // Show a message if the input is not a valid number
+        alert("Please enter a valid number."); // Show a message if the input is not valid
       }
       this.value = ""; // Resets the input value after the counter is updated
     }

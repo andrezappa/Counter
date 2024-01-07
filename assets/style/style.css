@@ -1,4 +1,4 @@
-/*GENERAL SETTINGS*/
+/*General Settings*/
 :root {
   --bgbody: hsl(0, 0%, 14%);
   --bgbody2: hsl(0, 0%, 8%);
@@ -41,7 +41,7 @@ button > p {
   margin-top: 5px;
 }
 
-/*HEADER*/
+/*Header*/
 header {
   height: 10vh;
   background-color: var(--bgbody2);
@@ -52,7 +52,7 @@ header {
   justify-content: space-around;
 }
 
-/*MAIN CONTENT*/
+/*Main Content*/
 .container {
   margin: 0 auto;
   display: flex;
@@ -174,7 +174,7 @@ input:focus {
   margin-bottom: 10px;
 }
 
-/*FOOTER*/
+/*Footer*/
 footer {
   height: 10vh;
   background-color: var(--bgbody2);
