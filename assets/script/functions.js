@@ -21,34 +21,36 @@ function createElement(
   return elem;
 }
 
+let counterDisplay = document.getElementById("counterDisplay");
+
 // Increment Function
 function plus() {
   counter++;
-  document.getElementById("counterDisplay").innerHTML = counter;
+  counterDisplay.innerHTML = counter;
 }
 
 // Decrement Function
 function minus() {
   counter--;
-  document.getElementById("counterDisplay").innerHTML = counter;
+  counterDisplay.innerHTML = counter;
 }
 
 // Reset Function
 function reset() {
   counter = 0;
-  document.getElementById("counterDisplay").innerHTML = counter;
+  counterDisplay.innerHTML = counter;
 }
 
 // Increment Function of 10
 function plus10() {
   counter += 10;
-  document.getElementById("counterDisplay").innerHTML = counter;
+  counterDisplay.innerHTML = counter;
 }
 
 // Decremet Function of 10
 function minus10() {
   counter -= 10;
-  document.getElementById("counterDisplay").innerHTML = counter;
+  counterDisplay.innerHTML = counter;
 }
 
 // Auto Increment Function

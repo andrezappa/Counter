@@ -173,8 +173,6 @@ document.querySelector("#setCounter").addEventListener("click", function () {
   document.getElementById("startInput").value = ""; // Reset the input
 });
 
-// Keyboard Input
-
 // Setting a start value via keyboard
 document
   .getElementById("startInput")
